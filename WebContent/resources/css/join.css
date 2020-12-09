@@ -1,0 +1,102 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+  text-decoration: none;
+}
+input{
+  outline: none;
+}
+.nav{
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .appleId{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.navBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navBtn a{
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  font-size: 12px;
+}
+.background{
+  background-image: url("https://source.unsplash.com/random/1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nameAddress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.nameAddress .explain{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.nameAddress input{
+  height: 45px;
+  font-size: 16px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.nameAddress .addressBirthday input{
+  margin-bottom: 10px;
+  width: 400px;
+}
+input[type="submit"],input[type="reset"]{
+  background-color: #eeeeee;
+  color: black;
+  padding: 2px 65px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 735px){
+  .nav .navBtn a{
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+  }
+  .nav .navBtn .navbtn-border{
+    border: none;
+  }
+  .background{
+    width: 100%;
+  }
+  .explain p{
+    font-size: 14px;
+  }
+  .nameAddress{
+    width: 100%;
+  }
+  .nameAddress input{
+    width: 187px;
+  }
+  .addressBirthday input{
+    max-width: 90%;
+  }
+  
+}

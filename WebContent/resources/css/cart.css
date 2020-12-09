@@ -1,0 +1,767 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*layout*/
+
+.wrap{
+  width: 100%;
+}
+/* visual */
+section.visual{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  width: 1000px;
+}
+section.visual .title{
+  color: #fff;
+}
+section.visual .title h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: black;
+}
+section.visual .title p{
+  font-size:15px;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+section.visual .menu li{
+  float: left;
+  list-style: none;
+}
+section.visual .menu li a p{
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.visual .menu button:hover{
+  cursor: pointer;
+  background-color: rgb(4, 119, 233);
+  
+}
+.visual .menu button:hover.welcomeM{
+  cursor: pointer;
+  background-color: rgb(235,235,235);
+}
+section.visual .img img{
+  transform: scale(1);
+  animation-name: scaleani;
+  animation-duration: 2s;
+}
+section.about{
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;  
+  padding: 50px 0;
+}
+section.about img{
+  width: 980px;
+  height: 400px;
+}
+section.about .inner{
+  width: 100%;
+  height: 400px;
+  background-image: url(/FruitShopping/img/apple3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+section.about .inner .innerContent{
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+section.about .inner h2{
+  font-size: 30px;
+  font-weight: bolder;
+  color: Black;
+  font-weight: normal;
+}
+section.about h3{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(115,115,116);
+}
+section.about .inner .line{
+  width: 35%;
+  margin: 80px auto;
+  position: relative;  
+  
+}
+section.about li{
+  list-style: none;
+}
+section.about .inner .line span{
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+} 
+section.about button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container {
+	display: flex;
+	/* display: inline-flex; */
+}
+.item{
+  font-size: 30px;
+}
+section.middle{
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  padding: 15px;
+  margin: 0 auto;
+}
+section.middle button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.title2 h2{
+  font-size: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.chatbtn {
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  border: 0;
+  outline: 0;
+}
+.shopbtn{
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgb(242,242,242);
+  background-color: rgb(242,242,242);
+  color: rgb(0,113,227);
+  padding: 5px;
+  border: 0;
+  outline: 0;
+}
+section.question{
+  border-top: 1px solid gainsboro;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+section.question li{
+  list-style: none;
+}
+.title3{
+  width: 100%;
+  display: flex;
+}
+.title3 h2{
+  margin-top: 30px;
+  font-size: 30px;
+  margin-right: auto;
+  padding-left: 20px;
+}
+.listbtn{
+  font-size: 50px;
+  border: 1px solid white;
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding-right: 20px;
+}
+.login{
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgb(0,113,227);
+  color: white;
+  padding: 20px 160px;
+  margin-right: 15px;
+  border: 0;
+  outline: 0;
+}
+.welcomeM{
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgb(235,235,235);
+  color: black;
+  padding: 20px 160px;
+  border: 0;
+  outline: 0;
+}
+.togglebtn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+.social-icons img {
+  width: 30px ;
+  cursor: pointer;
+}
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right,);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.checkbox {
+  margin: 30px 10px 30px 0;
+}
+.footer{
+  width: 100%;
+}
+@keyframes slide-up{
+  0%{opacity: 0;}
+  40%{opacity: 0; transform: translateY(40px);}
+}
+section.visual .title h2{
+  animation-name: slide-up; 
+  animation-duration: 1.5s;
+}
+section.visual .title p{
+  animation-name: slide-up; 
+  animation-duration: 2.2s;
+}
+section.visual .menu{
+  animation-name: slide-up; 
+  animation-duration: 2.8s;
+}
+@keyframes scaleani{
+  0%{transform: scale(1.3);}
+  30%{transform: scale(1.3);}
+}
+.qnabtn{
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  cursor: pointer;
+}
+.pickbtn{
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  cursor: pointer;
+}
+.pickbtn:hover{
+  text-decoration: underline;
+}
+hr{
+  border-top: 1px solid gainsboro;
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.faq button{
+  outline: none;
+}
+.faq h3{
+  font-size: 17px;
+  color: black;
+}
+
+@media screen and (max-width: 1000PX){
+  .visual{
+    padding-left: 20px;
+  }
+section.visual .title p{
+  width: 200px;
+  }
+  .visual .menu .login{
+    margin-bottom: 15px;
+    padding: 20px 183px;
+  }
+  .visual .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .inner .innerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .question{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------장바구니 로그인후 css-------------------------------------------  */
+
+
+
+
+
+@charset "utf-8";
+@import 'AppleNav.css';
+@import 'footer.css';
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+hr{
+  border-top: 1px solid gainsboro;
+  
+}
+
+
+.paybox h2:hover{
+  color: rgb(0,113,227);
+}
+
+
+/*layout*/
+body {
+  font-family: 'NanumSquare', sans-serif !important;
+  font-size: 14px;
+  color: #4e4e4e;
+  line-height: 1.4;
+}
+/* visual */
+section.visual{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  color: black;
+}
+section.visual .title{
+  color: black;
+}
+section.visual .title h2{
+  font-size: 35px;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.visual .title p{
+  font-size:15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+}
+section.visual .menu li{
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+.pay{
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: rgb(0,113,227);
+  color: white;
+  padding: 8px 130px;
+  border: 0;
+  outline: 0;
+}
+.pay2{
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: rgb(0,113,227);
+  color: white;
+  padding: 18px 140px;
+  border: 0;
+  outline: 0;
+  position: relative;
+  left: 950px;
+  top: 20px;
+}
+
+.visual button:hover{
+  cursor: pointer;
+  background-color: rgb(4, 119, 233);
+}
+.pay2:hover{
+  cursor: pointer;
+  background-color: rgb(4, 119, 233);
+}
+
+@keyframes slide-up{
+  0%{opacity: 0;}
+  40%{opacity: 0; transform: translateY(40px);}
+}
+section.visual .title h2{
+  animation-name: slide-up; 
+  animation-duration: 1.5s;
+}
+section.visual .title p{
+  animation-name: slide-up; 
+  animation-duration: 2.2s;
+}
+section.visual .menu{
+  animation-name: slide-up; 
+  animation-duration: 2.8s;
+}
+
+@keyframes scaleani{
+  0%{transform: scale(1.3);}
+  30%{transform: scale(1.3);}
+}
+section.paybox{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  width: 90%
+}
+section.paybox .title h2{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+section.paybox .title p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.paybox .result{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  
+}
+
+
+
+.paybox .result .result-1, .paybox .result .result-2, .paybox .result .result-3,
+ .paybox .result .result-4, .paybox .result .result-5,.paybox .result .result-6
+ {
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  max-width: 1000px;
+  border-top: gainsboro;
+  position: relative;
+  left: 250px;
+}
+
+
+.paybox .Mac1{
+  position: relative;
+  left: 230px;
+}
+.paybox .delete{
+  position: relative;
+  left: 50px;
+}
+.paybox .plusin{
+  position: relative;
+  left: 110px;
+}
+.paybox .plusin1{
+  position: relative;
+  left: 122px;
+}
+.paybox .plusin2{
+  position: relative;
+  right: 260px;
+}
+.paybox .plusin3{
+  position: relative;
+  right: 260px;
+}
+.paybox .plusin4{
+  position: relative;
+  left: 95px;
+}
+.paybox .moreinfo{
+  position: absolute;
+  right: 190px;
+  bottom: 0px;
+  left: 60px;
+}
+.paybox .moneys2{
+  position: relative;
+  left: 170px;
+
+}
+.paybox .title-1{
+  position: relative;
+  right: 22px;
+}
+.paybox .title-2{
+  position: relative;
+  left: 150px;
+  
+}
+.delete, .moreinfo, .plusin, .plusin1, .plusin2, .plusin3, .plusin4{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  font-weight: 1000;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  cursor: pointer;
+}
+.option .numberlist{
+  width: 50px;
+  padding: .5em .5em;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.option .numberlist:hover{
+  border: 4px solid rgb(0,113,227);
+  text-decoration: none;
+}
+section.middle{
+  margin-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  padding: 15px;
+}
+section.middle button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.title2 h2{
+  font-size: 18px;
+  width: 100%;
+  margin: 0 auto;
+}
+.title-3 h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.moneys2 h3{
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+.chatbtn {
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  border: 0;
+  outline: 0;
+}
+section.about{
+  width: 95%;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;  
+  padding: 50px;
+}
+section.about img{
+  width: 980px;
+  height: 400px;
+}
+section.about .inner{
+  width: 100%;
+  height: 400px;
+  background-image: url(/FruitShopping/img/apple3.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+section.about .inner .innerContent{
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+section.about .inner h2{
+  font-size: 30px;
+  font-weight: bolder;
+  color: Black;
+  font-weight: normal;
+}
+section.about h3{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(115,115,116);
+}
+section.about .inner .line{
+  width: 35%;
+  margin: 80px auto;
+  position: relative;  
+  
+}
+section.about .inner .line span{
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+} 
+section.about button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.shopbtn{
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgb(242,242,242);
+  background-color: rgb(242,242,242);
+  color: rgb(0,113,227);
+  padding: 5px;
+  border: 0;
+  outline: 0;
+}
+
+.title3{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title3 h2{
+  text-align: left;
+  margin-top: 30px;
+  font-size: 30px;
+}
+section.question{
+  border-top: 1px solid gainsboro;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+.listbtn{
+  font-size: 50px;
+  border: 1px solid white;
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+
+}
+.qnabtn{
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+}
+.pickbtn{
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0,113,227);
+  padding: 5px;
+  cursor: pointer;
+  
+}
+.pickbtn:hover{
+  text-decoration: underline;
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+}
+.faq button{
+  outline: none;
+}
+
+.togglebtn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+.paybox button{
+  outline: none;
+}
+
+@media screen and(max-width:1000px){
+  
+}
+ 

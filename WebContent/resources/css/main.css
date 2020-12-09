@@ -1,0 +1,326 @@
+ @import 'topNav.css';
+@import 'footer.css';
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'Noto Sans KR',sans-serif;
+}
+/* Header */
+#headers{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Header 아래 Notice */
+.topNotice{
+  padding: 10px;
+  font-size: 12px;
+  display: flex;
+  color: #5B5B5C;
+  justify-content: center;
+  font-weight: bolder;
+}
+.topNotice .pBlue{
+  color: #0F6FCF;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.topNotice .pBlue:hover{
+  border-bottom: 1px solid #0066CC;
+}
+
+/* 메인 컨텐츠 */
+.item1{
+  background-image: url(image/1.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item1Content{
+  right: 100px;
+  bottom: 70px;
+}
+.item1Content p, .item2Content p{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 7px 0;
+}
+.item1Content h1, .item2Content h1, .item3Content h1{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.itemBtn1{
+  margin-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.itemBtn2{
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.itemBtn1 i,.itemBtn2 i{
+  color: #0066CC; 
+  cursor: pointer;
+}
+.itemBtn1 button, .itemBtn2 button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #0066CC; 
+  cursor: pointer;
+}
+.itemBtn1 button:hover, .itemBtn2 button:hover{border-bottom: 2px solid #0066CC;}
+.itemBtn2 button{font-size: 15px; font-weight: bold;}
+
+.item2{
+  background-image: url(image/2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.item3{
+  background-image: url(image/3.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item3 p{
+  font-size: 80px;
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item3 .itemBtn1{
+  margin-top: 20px;
+  justify-content: center;
+}
+.itemBox{
+  display: grid;
+  gap: 12px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  margin: 12px;
+}
+.item4{
+  background-image: url(image/4.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+} 
+.item5{
+  background-image: url(image/5.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.item6{
+  background-image: url(image/6.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+.item7{
+  background-image: url(image/7.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.item8{
+  background-image: url(image/8.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.item9{
+  background-image: url(image/9.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.item2Content{
+  left: 100px;
+  bottom: 70px;
+}
+.item3Content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40vh;
+}
+.item4 h1, .item5 h1, .item6 h1, .item7 h1{
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.item4 h2, .item5 h2,.item6 h2, .item7 h2{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: white;
+}
+.item5 h3{
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.item4 p, .item5 p, .item6 p{
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  color: #86868B;
+}
+.item7 p{
+  color: #C21D27;
+  text-align: center;
+  font-size: 19px;
+}
+.item7ContentItem{
+  color: #BF4800;
+  border : 1px solid #BF4800;
+  border-radius: 18px;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: rgba(0,0,0,0);
+  width: 110px;
+  margin: 0 auto;
+}
+.item7ContentItem p{
+  font-size: 11px;
+}
+.item7Content{
+  bottom: 10px;
+}
+.item8 h2{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.item8 p{
+  color: #c21d27;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.item8Content{
+  text-align: center;
+  bottom: 30px;
+}
+.item9 h1{
+  font-size: 45px;
+  text-align: center;
+  font-weight: 200;
+}
+.item9 h2{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+
+/* 반응형 */
+@media screen and (max-width : 1045px){
+  .item1, .item2, .item3{
+    min-height: 70vh;
+  }
+  .item4, .item5, .item6, .item7, .item8, .item9{
+    min-height: 42vh;
+  }
+}
+@media screen and (max-width : 747px){
+  .topBarList{
+    display: none;
+  }
+  .topBarListPhone{
+    display: flex;
+  }
+  .item9{
+    align-items: center;
+  }
+  .footerContentBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footerContentList{
+    display: none;
+  }
+  .footerTitle{
+    padding: 10px 5px;
+    border-bottom: 1px solid #D2D2D7;
+  }
+  .footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5{
+    width: 100%;
+  }
+}
+@media screen and (max-width : 710px){
+  .topNotice{
+    max-width: 331px;
+    padding: 13px 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 11px;
+  }
+  .item1, .item2, .item3{
+    min-height: 55vh;
+  }
+  .itemBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .item4, .item5, .item6, .item7, .item8, .item9{
+    height: 48vh;
+    justify-content: center;
+  }
+  .itemBtn1{
+    min-width: 250px;
+    text-align: center;
+  }
+  .itemBtn2{
+    min-width: 200px;
+  }
+}
+
